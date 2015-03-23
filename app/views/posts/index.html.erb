@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-8">
+    <h1>Popular Startup Submissions</h1>
+    <p class="lead">Active posts this week</p>
+    <%= render partial: 'posts/post', collection: @posts, locals: { show_topic: true } %>
+    <%= will_paginate @posts %>
+  </div>
+  <div class="col-md-4">
+  </div>
+</div>
